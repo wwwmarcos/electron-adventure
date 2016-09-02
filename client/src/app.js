@@ -8,7 +8,10 @@ const storage = require('electron-json-storage');
     angular
     .module('app', [
       'StorageServiceModule'
-    ]);
+      , 'ngMaterial'
+      , 'ngMessages'
+      , 'MaterialFacade'
+    ])
     .controller('appController', appController);
 
     appController.$inject = ['storage']

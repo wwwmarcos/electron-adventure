@@ -4,14 +4,30 @@
     <title>Start</title>
     <meta charset="UTF-8">
   <!-- bower:css -->
+  <link rel="stylesheet" href="client/src/lib/angular-material/angular-material.css" />
   <!-- endbower -->
+  <link rel="stylesheet" href="client/src/css/app.css"></script>
   </head>
   <body data-ng-controller="appController as vm">
-    <h1>wow dave</h1>
+    
+    <div class="container-slim">
+      <md-content layout-padding class="md-whiteframe-6dp">
+        <input-text name="marketName" model="vm.market.name" label="Market name" is-required="true" md-class="md-block" md-class="md-block"></input-text>
+        <md-button class="md-raised md-primary">Save</md-button>   
+      </md-content>   
+    </div>
+
   </body>
   <!-- bower:js -->
   <script src="client/src/lib/angular/angular.js"></script>
-  <script src="client/src/lib/ng-electron/ng-electron.js"></script>
+  <script src="client/src/lib/angular-animate/angular-animate.js"></script>
+  <script src="client/src/lib/angular-aria/angular-aria.js"></script>
+  <script src="client/src/lib/angular-messages/angular-messages.js"></script>
+  <script src="client/src/lib/angular-material/angular-material.js"></script>
+  <script src="client/src/lib/ng-material-facade/src/material-facade.module.js"></script>
+  <script src="client/src/lib/ng-material-facade/src/config-provider/config-material-facade.provider.js"></script>
+  <script src="client/src/lib/ng-material-facade/src/input-text/input-text.directive.js"></script>
+  <script src="client/src/lib/ng-material-facade/src/input-email/input-email.directive.js"></script>
   <!-- endbower -->
   <script src="client/src/app.js"></script>
   <script src="client/src/storage.service.js"></script>

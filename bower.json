@@ -12,6 +12,7 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "^1.5.7"
+    "angular": "^1.5.7",
+    "ng-material-facade": "git@github.com:marcosflorencio/angular-material-facade.git/#~*"
   }
 }
