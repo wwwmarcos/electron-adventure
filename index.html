@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html data-ng-app="app">
+  <head>
+    <title>Start</title>
+    <meta charset="UTF-8">
+  <!-- bower:css -->
+  <!-- endbower -->
+  </head>
+  <body data-ng-controller="appController as vm">
+    <h1>wow dave</h1>
+  </body>
+  <!-- bower:js -->
+  <script src="client/src/lib/angular/angular.js"></script>
+  <script src="client/src/lib/ng-electron/ng-electron.js"></script>
+  <!-- endbower -->
+  <script src="client/src/app.js"></script>
+  <script src="client/src/storage.service.js"></script>
+  <script>
+    require('./renderer.js')
+  </script>
+</html>

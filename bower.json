@@ -1,0 +1,17 @@
+{
+  "name": "electron-adventure",
+  "description": "My first project using electron",
+  "main": [
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.7"
+  }
+}
