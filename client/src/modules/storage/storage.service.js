@@ -6,7 +6,8 @@
   angular
     .module('StorageServiceModule', [])
     .factory('storage', storage);
-
+  
+  storage.$inject = ['$q'];
   function storage($q) {
     var factory = {
       set: set,

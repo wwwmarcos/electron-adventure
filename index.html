@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-ng-app="app">
+<html data-ng-app="App">
   <head>
     <title>Start</title>
     <meta charset="UTF-8">
@@ -8,12 +8,12 @@
   <!-- endbower -->
   <link rel="stylesheet" href="client/src/css/app.css"></script>
   </head>
-  <body data-ng-controller="appController as vm">
+  <body data-ng-controller="IndexController as vm">
     
     <div class="container-slim">
       <md-content layout-padding class="md-whiteframe-6dp">
         <input-text name="marketName" model="vm.market.name" label="Market name" is-required="true" md-class="md-block" md-class="md-block"></input-text>
-        <md-button class="md-raised md-primary">Save</md-button>   
+        <md-button class="md-primary">Save</md-button>   
       </md-content>   
     </div>
 
@@ -29,8 +29,15 @@
   <script src="client/src/lib/ng-material-facade/src/input-text/input-text.directive.js"></script>
   <script src="client/src/lib/ng-material-facade/src/input-email/input-email.directive.js"></script>
   <!-- endbower -->
-  <script src="client/src/app.js"></script>
-  <script src="client/src/storage.service.js"></script>
+  <!-- PRINCIPAL MODULES -->
+  <script src="client/src/app.module.js"></script>
+  <script src="client/src/app.controllers.js"></script>
+  <script src="client/src/app.constants.js"></script>
+  <script src="index.controller.js"></script>
+  <script src="client/src/modules/app.modules.js"></script>
+  <!-- STORAGE MODULE -->
+  <script src="client/src/modules/storage/storage.module.js"></script>
+  <script src="client/src/modules/storage/storage.service.js"></script>
   <script>
     require('./renderer.js')
   </script>
