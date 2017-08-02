@@ -1,7 +1,7 @@
 # electron-adventure
 My first project using electron
 
-> $ git clone https://github.com/marcosflorencio/electron-adventure.git
+> $ git clone https://github.com/eptaccio/electron-adventure.git
 
 > $ cd electron-adventure
 
